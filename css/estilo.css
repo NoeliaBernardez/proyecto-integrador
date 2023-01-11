@@ -1,0 +1,135 @@
+*{ 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes entrada-por-la-izquierda{
+    0%{ 
+        transform: translateX(-600px);
+   }
+    100%{
+        transform: translate(0px);
+    }
+
+}
+.encabezado{
+    background-color: #fd611a;
+    display: flex;
+    justify-content: center;
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logoCompraGamer{
+    animation: entrada-por-la-izquierda;
+    animation-duration: 5s;
+}
+
+.buscarProductos{
+    position: relative;
+}
+
+.buscarProductos input{
+    padding: 14px 10.5px;
+    border-radius: 7px;
+    border: none;
+    border: 1px solid grey;
+    font-size: 14px;
+    width: 308.984px;
+}
+
+.buscarProductos i{
+    position: absolute;
+    top: 15px;
+    left: 270px;
+}
+
+.buscarProductos input:hover{
+    border: 2px solid black
+}
+
+.iniciarSesion button{
+    background-color: #fd611a;
+    padding: 0px 10px 10px 0px;
+    margin: 15px 0px 0px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    color: white;
+}
+
+.irAlCarrito i{
+    cursor: pointer;
+    padding: 7px 0px 0px;
+    font-size: 24px;
+    top: 50px;
+}
+
+.navegador{
+    background-color: #fd611a;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    transition: all 2s ease;
+    cursor: pointer;
+}
+
+.ultimasNovedades{
+    color: #4e4d4d;
+    border-bottom: #7a7a7a 2px solid;
+}
+
+.cajaContenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sectionProductos{
+    margin: 10vh 5vw;
+}
+
+.caja{
+    padding: 16px 0px 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 1px 5px 0 dimgrey;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.caja img{
+    height: 95px;
+    width: 106px;
+}
+.caja h3{
+    font-size: 12px;
+    height: 55px;
+}
+
+.caja p{
+    color: #4675b9;
+    font-size: 18px;
+}
+
